@@ -5,7 +5,7 @@ import React from 'react'
 const Page = () => {
   return (
     <>
-    <Image src={"/und"} alt='Login-Image' height={300}  width={300} className='m-6 object-cover'/>
+    <Image src={"/"} alt='Login-Image' height={300}  width={300} className='m-6 object-cover'/>
     <SignInFormClient/>
     </>
   )
