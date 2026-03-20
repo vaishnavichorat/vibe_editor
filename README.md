@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Vibecode Editor – AI-Powered Web IDE
 
-## Getting Started
+Vibecode Editor is a fast and modern **AI-powered web IDE** that runs completely in the browser. It allows developers to write, run, and manage code with real-time execution, AI assistance, and a clean developer-friendly UI.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+* 🔐 **OAuth Authentication** – Login using Google and GitHub
+* 🎨 **Modern UI** – Built with Tailwind CSS and ShadCN UI
+* 🌗 **Dark/Light Mode** – Seamless theme switching
+* 🧱 **Project Templates** – React, Next.js, Express, Vue, Angular
+* 🗂️ **File Explorer** – Create, rename, delete files & folders
+* 🖊️ **Monaco Editor Integration** – Syntax highlighting & formatting
+* 💡 **AI Code Suggestions** – Smart autocomplete using local LLMs
+* ⚙️ **In-Browser Execution** – Run apps using WebContainers
+* 💻 **Terminal Support** – Integrated terminal with xterm.js
+* 🤖 **AI Chat Assistant** – Get help, explanations, and code refactoring
+
+---
+
+## 🧱 Tech Stack
+
+| Layer          | Technology                       |
+| -------------- | -------------------------------- |
+| Framework      | Next.js (App Router)             |
+| Language       | TypeScript                       |
+| Styling        | Tailwind CSS, ShadCN UI          |
+| Authentication | NextAuth (Google & GitHub OAuth) |
+| Code Editor    | Monaco Editor                    |
+| AI             | Ollama (Local LLMs)              |
+| Runtime        | WebContainers                    |
+| Terminal       | xterm.js                         |
+| Database       | MongoDB                          |
+
+---
+
+## 🛠️ Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/vibecode-editor.git
+cd vibecode-editor
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Setup Environment Variables
+
+Create a `.env.local` file:
+
+```bash
+cp .env.example .env.local
+```
+
+Add your credentials:
+
+```env
+AUTH_SECRET=your_auth_secret
+AUTH_GOOGLE_ID=your_google_client_id
+AUTH_GOOGLE_SECRET=your_google_secret
+AUTH_GITHUB_ID=your_github_client_id
+AUTH_GITHUB_SECRET=your_github_secret
+DATABASE_URL=your_mongodb_connection_string
+NEXTAUTH_URL=http://localhost:3000
+```
+
+---
+
+### 4️⃣ Start AI Model (Ollama)
+
+Make sure Ollama is installed, then run:
+
+```bash
+ollama run codellama
+```
+
+---
+
+### 5️⃣ Run the App
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit:
+👉 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Keyboard Shortcuts
 
-## Learn More
+| Shortcut     | Action                 |
+| ------------ | ---------------------- |
+| Ctrl + Space | Trigger AI suggestions |
+| Double Enter | Trigger AI suggestions |
+| Tab          | Accept AI suggestion   |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+-----
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📌 Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Multi-user collaboration 👥
+* Cloud deployment ☁️
+* Plugin system 🔌
+* Advanced AI features 🤖
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙏 Acknowledgements
+
+* Monaco Editor
+* Ollama
+* WebContainers
+* xterm.js
+* NextAuth.js
+
